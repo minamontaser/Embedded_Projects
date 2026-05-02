@@ -319,7 +319,7 @@ void loop(){
       }
     }
 
-    // we need to handle the special case of shutdown confirm if right was pressed on Shutdown; let's implement
+    // we need to handle the special case of shutdown confirm if right was pressed on Shutdown
     static bool inShutdownConfirm = false;
     if(inShutdownConfirm == false && right && now - lastNav <= 300 && selectedMenu == 2){
       inShutdownConfirm = true;
